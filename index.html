@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Apple-Homepage
+    </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-bar">
+        <ul>
+          <img src="images/logo.svg" class="logo">
+          <li>Mac</li>
+          <li>iPad</li>
+          <li>iPhone</li>
+          <li>Watch</li>
+          <li>TV</li>
+          <li>Music</li>
+          <li>Support</li>
+          <img src="images/search.svg" class="logo-sec">
+          <img src="images/bag.svg" class="logo-sec">
+        </ul>
+      </div>
+    </header>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/iphone.jpg">
+        <div class="text text-color"><b>iPhone</b><br>This is 7.</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="images/watch.jpg">
+        <div class="text"><b>Watch</b><br>SERIES 2</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="images/macbookpro.jpg">
+        <div class="text"><b>MacBook Pro</b><br>A touch of genius</div>
+      </div>
+    </div>
+    <br>
+    <div class="line-box">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <script>
+          var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var line = document.getElementsByClassName("line");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex> slides.length) {slideIndex = 1}    
+          for (i = 0; i < line.length; i++) {
+              line[i].className = line[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          line[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); 
+      }
+    </script>
+    <div class="grid">
+      <div class="row row-img-first"></div>
+      <div class="row row-img-second"></div>
+      <div class="row row-img-third"></div>
+      <div class="row row-img-fourth"></div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="footer-box">
+          <h1>Shop and Learn</h1>
+          <ul>
+            <li>Mac</li>
+            <li>iPad</li>
+            <li>iPhone</li>
+            <li>Watch</li>
+            <li>TV</li>
+            <li>Music</li>
+            <li>iTunes</li>
+            <li>iPod</li>
+            <li>Accessories</li>
+            <li>Gift Cards</li>
+          </ul>
+        </div>
+        <div class="footer-box">
+        <h1>Apple Store</h1>
+        <ul>
+          <li>Find a Store</li>
+          <li>Genius Bar</li>
+          <li>Workshops and Learning</li>
+          <li>Youth Programs</li>
+          <li>Apple Store App</li>
+          <li>Refurbished and Clearance</li>
+          <li>Financing</li>
+          <li>Reuse and Recycling</li>
+          <li>Order Status</li>
+          <li>Shopping Help</li>
+        </ul>
+        </div>
+        <div class="footer-box">
+          <h1>About Apple</h1>
+          <ul>
+            <li>Apple Info</li>
+            <li>Newsroom</li>
+            <li>Job Opportunities</li>
+            <li>Press Info</li>
+            <li>Investors</li>
+            <li>Events</li>
+            <li>Contact Apple</li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h1>For Bussiness</h1>
+          <ul>
+            <li>Apple and Bussiness</li>
+            <li>Shop fr Business</li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h1>Apple Values</h1>
+          <ul>
+            <li>Accessibility</li>
+            <li>Education</li>
+            <li>Enviroment</li>
+            <li>Inclusion and Diversity</li>
+            <li>Privacy</li>
+            <li>Supplier Responsibility</li>
+          </ul>
+        </div>
+        <div class="footer-line margin-first-line">
+          More ways to shop: Visit an <a href="#">Apple Store</a>, call 1-800-MY-APPLE or <a href="#">Find a reseller</a>
+        </div>
+        <div class="footer-line margin-second-line">
+          Copyright &copy; 2017 Apple Inc. All Rights Reserved
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Use</li>
+            <li>Sales and Refund</li>
+            <li>Legal</li>
+            <li>Site Map</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

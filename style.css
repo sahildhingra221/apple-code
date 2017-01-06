@@ -1,0 +1,264 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  margin:0;
+  padding:0;
+}
+.nav{
+  height:50px;
+  background-color:rgba(0,0,0,0.8);
+  position:absolute;
+  z-index:1;
+  width:100%;
+}
+.nav-bar{
+  width:1020px;
+  margin:auto;
+  height:50px;
+}
+.logo{
+  float:left;
+  padding:6.3px 5px;
+  transition:0.07s ease-in;
+  margin-right:33px;
+}
+.logo:hover{
+  opacity:0.5;
+  cursor:pointer;
+}
+.nav-bar ul li{
+  display:inline-block;
+  color:white;
+  margin:15px 33px;
+  padding:2.5px 5px;
+  font-size:14px;
+  font-family:geneva;
+  transition:0.07s ease-in;
+}
+.nav-bar ul li:hover{
+  opacity:0.5;
+  cursor:pointer;
+}
+.logo-sec{
+  padding:3.5px 5px;
+  float:right;
+  margin-right:35px;
+  transition:0.1 s ease-in;
+}
+.logo-sec:hover{
+  opacity:0.5;
+  cursor:pointer;
+}
+.mySlides{
+  //display:none;
+}
+.mySlides img{
+  width:100%;
+  height:800px;
+}
+.slideshow-container{
+  width:100%;
+  position:relative;
+  margin:auto;
+  height:760px;
+  overflow:hidden;
+}
+.text{
+  font-size:32px;
+  font-family:skia;
+  position:absolute;
+  top:80px;
+  width:100%;
+  text-align:center;
+  line-height:38px;
+  animation-duration:3.09s;
+  animation-name:texter;
+}
+.text-color{
+  color:white;
+}
+@keyframes texter{
+  0%{
+    transform:scale(1.1);
+    margin-left:100%;
+  }
+  7.5%{
+    opacity:1;
+  }
+  15%{
+    transform:scale(1);
+    margin-left:0px;
+  }
+  70%{
+    transform:scale(1);
+    margin-left:0px;
+    opacity:1;
+    font-size:32px;
+    line-height:38px;
+    top:80px;
+    width:100%;
+  }
+  100%{
+    transform:scale(0.9);
+    opacity:0.4;
+    margin-left:-260px;
+    font-size:22px;
+    line-height:18px;
+    top:160px;
+    width:100%;
+  }
+}
+.line-box{
+  padding:8px 0px;
+  position:absolute;
+  top:700px;
+  bottom:0;
+  right:0;
+  left:0;
+  text-align:center;
+}
+.line{
+  height:3px;
+  width:40px;
+  margin:0 2px;
+  background-color:#bbb;
+  border-radius:30px;
+  display:inline-block;
+  transition:background-color 0.5s ease;
+}
+.active{
+  background-color:lightslategrey;
+}
+.fade img{
+  animation-name:fade;
+  animation-duration:3.09s;
+}
+@keyframes fade{
+  0%{
+    transform:scale(1.1);
+    margin-left:100%;
+  }
+  7.5%{
+    opacity:1;
+  }
+  15%{
+    transform:scale(1);
+    margin-left:0px; 
+  } 
+  70%{
+    transform:scale(1);
+    margin-left: 0;
+    opacity:1;
+  }
+  100%{
+    transform:scale(0.9);
+    opacity:0.4;
+    margin-left:-260px;
+  }
+}
+.grid{
+  height:210px;
+  margin-top:-20px;
+}
+.row{
+  width:25%;
+  height:210px;
+  display:inline-block;
+  margin:0 -3px;
+  background-size:cover;
+  background-position:center;
+}
+.row-img-first{
+  background-image:url(images/made_by_apple.jpg);
+}
+.row-img-second{
+  background-image:url(images/ipad_pro.jpg);
+}
+.row-img-third{
+  background-image:url(images/airpods.jpg);
+}
+.row-img-fourth{
+  background-image:url(images/apple_tv.jpg);
+}
+footer{
+  padding:25px 0px;
+}
+.footer{
+  width:1020px;
+  margin:auto;
+}
+.footer-box{
+  display:inline-table;
+  margin:0 49px;
+  font-family:geneva;
+}
+footer h1{
+  font-size:11px;
+  margin-bottom:5px;
+}
+footer ul{
+  list-style:none;
+  font-size:10px;
+}
+footer ul li{
+  margin:3px 0px;
+  color:grey;
+  opacity:0.85;
+  cursor:pointer;
+}
+footer ul li:hover{
+  color:black;
+  text-decoration:underline;
+}
+.footer-line{
+  margin:0px 0px 0px 49px;
+  font-size:10px;
+  font-family:geneva;
+  color:grey;
+  opacity:0.7;
+}
+.margin-first-line{
+  margin:50px 0px 0px 49px;
+}
+.margin-second-line{
+  margin:25px 0px 0px 49px;
+}
+footer a{
+  text-decoration:none;
+}
+footer a:hover{
+  text-decoration:underline;
+}
+.footer-line ul{
+  display:inline-block;
+  margin-left:30px;
+}
+.footer-line ul li{
+  display:inline-block;
+  margin:0px 10px;
+  opacity:1;
+  color:grey;
+}
+.footer-line ul li:hover{
+  color:black;
+  text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
